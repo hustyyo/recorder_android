@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+              android:background="#000000"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:src="@drawable/ss"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/time_size"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/startPlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/stopPlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop Play"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/pausePlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pause Play"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/delete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Email"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/title_size"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="2dp"
+        />
+    <EditText
+        android:id="@+id/edit_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/edit_size"
+        android:background="#e3e3e3e3"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject Name"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/title_size"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="2dp"
+        />
+    <EditText
+        android:id="@+id/edit_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:layout_marginBottom="40dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/edit_size"
+        android:background="#e3e3e3e3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        >
+
+        <Button
+            android:id="@+id/startRecord"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_green_button"
+            android:textColor="@drawable/button_text"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/pauseRecord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_green_button"
+            android:textColor="@drawable/button_text"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/stopRecord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:background="@drawable/ic_green_button"
+            android:textColor="@drawable/button_text"
+            />
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
